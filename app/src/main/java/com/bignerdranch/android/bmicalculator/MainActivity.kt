@@ -55,10 +55,10 @@ if(BMIF<18){
     }else{
         if (BMIF in 25..30){
             val ideal:Int=22*(inM*2).toInt()
-            textresult.text ="OverWeight ! Your Ideal Weight is $ideal-${ideal+5} kg"
+            textresult.text ="OverWeight ! Your Ideal Weight is ${ideal-5}-$ideal kg"
         }else{
             val ideal:Int=22*(inM*2).toInt()
-            textresult.text ="Obese ! At high Rist, Ideal Weight $ideal-${ideal+5} kg "
+            textresult.text ="Obese ! At high Rist, Ideal Weight ${ideal-5}-$ideal  kg "
         }
     }
 }
